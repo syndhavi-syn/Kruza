@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruza</title>
+    <link rel="Icon" href="agrobolt.png" type="image/x-icon">
+    <img src="kruzak.jpg" alt="agrobolt Style">
+    <style>
+        body {
+            background-image: url('images/kruza.jpg');
+            /* Update path if needed */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            color: #0a8f5c;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .welcome {
+            background: rgba(10, 143, 92, 0.9);
+            /* Slight transparency for readability */
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            /* Slight transparency for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .browse {
+            border: 2px solid #27ae60;
+        }
+
+        .orders {
+            border: 2px solid #2980b9;
+        }
+
+        .wallet {
+            border: 2px solid #8e44ad;
+        }
+
+        .profile {
+            border: 2px solid #f39c12;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kruza</h1>
+        <div>
+            🛒 🔔
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="welcome">
+            <h2>Welcome to Kruza</h2>
+            <p>Fresh produce directly from verified farmers</p>
+        </div>
+
+        <div class="grid">
+            <a href="browse.html" class="card browse">🔍 Browse Crops</a>
+            <a href="orders.html" class="card orders">📦 My Orders</a>
+            <a href="wallet.html" class="card wallet">💳 Wallet</a>
+            <a href="profile.html" class="card profile">👤 Profile</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
